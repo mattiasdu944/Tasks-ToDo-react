@@ -59,6 +59,8 @@ function App() {
           <Route path='tareas' element={<Tareas/>}/>
           <Route path='categorias' element={<Categorias/>}/>
         </Route>
+
+        <Route path='*' element={<Login/>}/>
         
         
       </Routes>
