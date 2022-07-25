@@ -76,7 +76,7 @@ const SignIn = () => {
     };
 
     return (
-        <section className='login__container px-3 sm:p-0 bacground_svg w-full flex items-center justify-center rounded-xl border-4'>
+        <section className='login__container px-3 sm:p-0 bacground_svg border-black w-full flex items-center justify-center rounded-xl border-4'>
             <div className="login__content w-[24rem] shadow-xl">
                 <div className="mb-3">
                     <h1 className="text-indigo-400 text-3xl font-semibold mb-2">Registrate!</h1>

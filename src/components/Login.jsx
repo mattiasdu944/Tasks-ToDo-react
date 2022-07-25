@@ -63,7 +63,7 @@ const Login = () => {
   };
 
   return (
-    <section className='login__container px-3 sm:p-0  bacground_svg w-full flex items-center justify-center rounded-xl border-4'>
+    <section className='login__container px-3 sm:p-0 border-black  bacground_svg w-full flex items-center justify-center rounded-xl border-4'>
       <div className="login__content w-[24rem]">
 
         <div className="mb-3">

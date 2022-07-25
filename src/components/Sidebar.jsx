@@ -22,7 +22,7 @@ const Sidebar = ({usuario,setUsuario}) => {
             icono: <BsFillPenFill />,
         },
         {
-            nombre: 'Mis Categorias',
+            nombre: 'Categorias',
             enlace: 'categorias',
             icono: <BsBookFill />,
         },
@@ -43,7 +43,7 @@ const Sidebar = ({usuario,setUsuario}) => {
                     </span>
                 </h1>
 
-                <ul className='mt-15'>
+                <ul className='sidebar__menu mt-15'>
 
                     {paginas.map(pagina =>
                         <li key={pagina.enlace}>
@@ -61,15 +61,18 @@ const Sidebar = ({usuario,setUsuario}) => {
                         </li>
 
                     )}
-                    <li 
-                        onClick={() =>cerrarSesion() }
-                        className="text-gray-200 px-4 py-3 my-4 btn__sidebar cursor-pointer flex items-center gap-3 text-md hover:bg-red-500 rounded-md">
-                        <BiLogOut/>
-                        Cerrar Sesion
-                    </li>
+
                 </ul>
-                
-                <span className='text-indigo-400'>
+
+                <div 
+                    onClick={() =>cerrarSesion() }
+                    className="text-gray-200 px-4 py-3 my-4 btn__sidebar cursor-pointer flex items-center gap-3 text-md bg-red-500 sm:bg-transparent hover:bg-red-600 rounded-md">
+                    <BiLogOut/>
+                    <span className="hidden sm:block">
+                        Cerrar Sesion
+                    </span>
+                </div>                
+                <span className='text-indigo-400 hidden sm:flex'>
                    beta.v.0.0.1 :D
                 </span>
 

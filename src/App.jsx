@@ -40,7 +40,8 @@ function App() {
 
 
   return (
-      <Routes>
+    <Routes>
+        {/* <Route path='*' element={<Login/>}/> */}
         <Route path="/" element={<Login/>}>
         </Route>
         <Route path="/signin" element={<SignIn/>}>
@@ -60,7 +61,6 @@ function App() {
           <Route path='categorias' element={<Categorias/>}/>
         </Route>
 
-        <Route path='*' element={<Login/>}/>
         
         
       </Routes>
